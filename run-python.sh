@@ -1,5 +1,5 @@
 #!/bin/bash
-docker rm raskeytarapp1 >>NULL
+docker rm raskeytarapp1 >/dev/null
 docker run -t -d -p 8080:8080 --name raskeytarapp1 raskeytarapp-python
 echo Container named raskeytarapp1 started
 echo .
