@@ -35,9 +35,20 @@ Remark: On WSL2 with Ubuntu you may need to recreate WSL networking, see below i
 - pip
 
 ```bash
-$ sudo apt-get install python3-pip
 $ sudo apt-get update
+$ sudo apt-get install python3-pip
 $ pip3 install flask
+```
+
+### NodeJS
+- nodejs
+- npm
+
+```bash
+$ sudo apt-get update
+$ sudo apt-get install nodejs npm
+# package.json defines the dependencies
+$ npm install 
 ```
 
 

@@ -1,0 +1,13 @@
+{
+  "name": "raskeytar_web_app",
+  "version": "1.0.0",
+  "description": "raskeytar.at WebSite with Node.js on Docker",
+  "author": "Bernhard Wallisch <bernhard.wallisch@raskeytar.at>",
+  "main": "raskeytar_app.js",
+  "scripts": {
+    "start": "node raskeytar_app.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1"
+  }
+}
