@@ -29,6 +29,8 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io
 
 sudo usermod -aG docker $USER
+
+sudo service docker start
 ```
 
 ## Build
@@ -38,5 +40,13 @@ run  ```./build.sh```
 ## Run
 
 ### WebApp without Docker
-run ```python raskeytar_app.py````
+run ```python raskeytar_app.py```
 
+### WebApp inside Docker
+Attention: The docker image has to be built already.
+run ```./run-python.sh```
+
+Details:
+- Run ```docker run -t -d -p 8080:8080 --name raskeytarapp1 raskeytarapp-python``` to start the container
+- Open http://127.0.0.1:8080/ in your browser.
+- Run ```docker stop raskeytarapp1``` to shutdown container.
