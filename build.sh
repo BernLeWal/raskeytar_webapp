@@ -21,5 +21,5 @@ echo "CMD python3 /home/myapp/raskeytar_app.py" >> tempdir/Dockerfile
 
 # Build Docker container
 cd tempdir
-docker build -t sampleapp .
+docker build -t raskeytarapp .
 

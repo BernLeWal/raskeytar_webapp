@@ -32,3 +32,11 @@ sudo usermod -aG docker $USER
 ```
 
 ## Build
+
+run  ```./build.sh```
+
+## Run
+
+### WebApp without Docker
+run ```python raskeytar_app.py````
+
