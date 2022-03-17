@@ -1,8 +1,10 @@
 # WebSite raskeytar.at 
 
-Shows different possibilities to host a WebSite with the help of different servers/frameworks, like
+Shows different possibilities to host a WebSite inside a Docker container 
+with the help of different servers/frameworks, like
 - Python & Flask-Library
 - Apache2 (static content only)
+- Nginx (static content only)
 
 
 ## Prerequisites
@@ -47,6 +49,8 @@ run  ```./build-python.sh```
 ### Apache2 WebServer
 run  ```./build-apache2.sh```
 
+### Nginx WebServer (on Ubuntu)
+run  ```./build-nginx.sh```
 
 ## Run
 
@@ -65,6 +69,8 @@ Details:
 ### Apache2 hosted WebApp
 run ```./run-apache2.sh```
 
+### Nginx hosted WebApp
+run ```./run-nginx.sh```
 
 
 ## Troubleshooting
