@@ -5,6 +5,12 @@ with the help of different servers/frameworks, like
 - Python & Flask-Library
 - Apache2 (static content only)
 - Nginx (static content only)
+- NodeJS & Express-Library
+
+TODOs:
+[] finish docker for nodejs
+[] rename templates to app_python
+[] split README.md into seperate documents per technology
 
 
 ## Prerequisites

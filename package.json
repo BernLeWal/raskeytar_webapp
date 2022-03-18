@@ -1,13 +1,16 @@
 {
-  "name": "raskeytar_web_app",
-  "version": "1.0.0",
-  "description": "raskeytar.at WebSite with Node.js on Docker",
-  "author": "Bernhard Wallisch <bernhard.wallisch@raskeytar.at>",
-  "main": "app_nodejs.js",
+  "name": "nodejs-express",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "start": "node app_nodejs.js"
+    "start": "node ./app_nodejs/www"
   },
   "dependencies": {
-    "express": "^4.16.1"
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
   }
 }
