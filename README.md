@@ -50,6 +50,11 @@ $ sudo apt-get install nodejs npm
 # package.json defines the dependencies
 $ npm install 
 ```
+see 
+- https://expressjs.com/en/starter/generator.html
+- https://code-boxx.com/simple-http-web-server-nodejs/
+- https://note.hommalab.io/posts/nodejs/nodejs-http-server/
+
 
 
 ## Build
@@ -66,7 +71,7 @@ run  ```./build-nginx.sh```
 ## Run
 
 ### Python+Flask WebApp without Docker
-run ```python raskeytar_app.py```
+run ```python app_python.py```
 
 ### Python+Flask WebApp inside Docker
 Attention: The docker image has to be built already.

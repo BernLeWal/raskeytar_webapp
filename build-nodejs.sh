@@ -7,7 +7,7 @@ mkdir tempdir/app
 
 # Copy WebSite
 cp package*.json tempdir/
-cp raskeytar_app.js tempdir/
+cp app_nodejs.js tempdir/
 cp -r static/* tempdir/app/.
 
 # Generate Dockerfile
@@ -25,11 +25,11 @@ echo "RUN npm install" >> tempdir/Dockerfile
 # RUN npm ci --only=production
 
 # Bundle app source
-echo "COPY raskeytar_app.js ." >> tempdir/Dockerfile
+echo "COPY app_nodejs.js ." >> tempdir/Dockerfile
 
 echo "EXPOSE 8080" >> tempdir/Dockerfile
 
-echo 'CMD [ "node", "raskeytar_app.js" ]' >> tempdir/Dockerfile
+echo 'CMD [ "node", "app_nodejs.js" ]' >> tempdir/Dockerfile
 
 # Build Docker container
 cd tempdir
