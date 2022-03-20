@@ -6,7 +6,7 @@ from flask import Flask, send_from_directory
 from flask import request
 from flask import render_template
 
-webapp = Flask(__name__)
+webapp = Flask(__name__, template_folder="app_python")
 
 # Templates
 @webapp.route("/index.html")

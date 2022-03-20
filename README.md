@@ -1,16 +1,15 @@
 # WebSite raskeytar.at 
 
-Shows different possibilities to host a WebSite inside a Docker container 
-with the help of different servers/frameworks, like
-- Python & Flask-Library
-- Apache2 (static content only)
-- Nginx (static content only)
-- NodeJS & Express-Library
+This project shows different possibilities to host a WebSite inside a Docker container 
+with the help of different servers and frameworks, like
+- Python & Flask-Library, see [README-python.md](README-python.md)
+- Apache2 (static content only), see [README-apache2.md](README-apache2.md)
+- Nginx (static content only), see [README-nginx.md](README-nginx.md)
+- NodeJS & Express-Library [README-nodejs.md](README-nodejs.md)
 
-TODOs:
-[] finish docker for nodejs
-[] rename templates to app_python
-[] split README.md into seperate documents per technology
+TODOs:  
+  [] finish docker for nodejs  
+
 
 
 ## Prerequisites
@@ -36,16 +35,6 @@ sudo service docker start
 Remark: On WSL2 with Ubuntu you may need to recreate WSL networking, see below in the Troubleshooting-chapter.
 
 
-### Python with Flask-library
-- python3
-- pip
-
-```bash
-$ sudo apt-get update
-$ sudo apt-get install python3-pip
-$ pip3 install flask
-```
-
 ### NodeJS
 - nodejs
 - npm
@@ -62,11 +51,30 @@ see
 - https://note.hommalab.io/posts/nodejs/nodejs-http-server/
 
 
+## Directory-Structure
+```
+.
+├── LICENSE
+├── README*.md              Documentation
+├── app_*                   App-specific directories (containing plattform files)
+├── build-*.sh              Build script, creates the Docker container
+├── run-*.sh                Run script, executes the pre-built Docker container
+├── static                  Static pages of the raskeytar.at sample website:
+│   ├── assets
+│   │   ├── css               Stylesheets
+│   │   ├── fonts             Fonts
+│   │   └── js                Client-Side JavaScript
+│   ├── elements.html         Shows all elements of the CSS-Template
+│   ├── favicon.ico           The WebSites favicon
+│   ├── generic.html
+│   ├── images                Images used in the WebSites content
+│   └── index.html            The landing-page as static file (no dynamic content here)
+└── tempdir                 Temporary directory used by the build-scripts to generate the docker container
+    ├── Dockerfile          The generated Dockerfile
+    ├── ...
+```
 
 ## Build
-
-### Python with Flask-library
-run  ```./build-python.sh```
 
 ### Apache2 WebServer
 run  ```./build-apache2.sh```
@@ -76,8 +84,6 @@ run  ```./build-nginx.sh```
 
 ## Run
 
-### Python+Flask WebApp without Docker
-run ```python app_python.py```
 
 ### Python+Flask WebApp inside Docker
 Attention: The docker image has to be built already.
