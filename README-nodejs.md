@@ -8,6 +8,9 @@ See [WebSite raskeytar.at](README.md).
 
 The used structure and pre-implementation of the WebSite was generated with ExpressJS, see below.
 
+TODOs:  
+  [] finish docker for nodejs  
+
 ## Prerequisites
 
 To host a WebSite with NodeJS and the use of the ExpressJS-library
@@ -17,6 +20,8 @@ To host a WebSite with NodeJS and the use of the ExpressJS-library
 ```bash
 $ sudo apt-get update
 $ sudo apt-get install nodejs npm
+# package.json defines the dependencies
+$ npm install 
 ```
 
 see also https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04
@@ -73,3 +78,9 @@ $ npx express-generator
 ...
 $ npm install
 ```
+
+## Further Material
+see 
+- https://expressjs.com/en/starter/generator.html
+- https://code-boxx.com/simple-http-web-server-nodejs/
+- https://note.hommalab.io/posts/nodejs/nodejs-http-server/

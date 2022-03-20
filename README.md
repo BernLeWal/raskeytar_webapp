@@ -7,11 +7,6 @@ with the help of different servers and frameworks, like
 - Nginx (static content only), see [README-nginx.md](README-nginx.md)
 - NodeJS & Express-Library [README-nodejs.md](README-nodejs.md)
 
-TODOs:  
-  [] finish docker for nodejs  
-
-
-
 ## Prerequisites
 
 ### Docker
@@ -33,23 +28,6 @@ sudo usermod -aG docker $USER
 sudo service docker start
 ```
 Remark: On WSL2 with Ubuntu you may need to recreate WSL networking, see below in the Troubleshooting-chapter.
-
-
-### NodeJS
-- nodejs
-- npm
-
-```bash
-$ sudo apt-get update
-$ sudo apt-get install nodejs npm
-# package.json defines the dependencies
-$ npm install 
-```
-see 
-- https://expressjs.com/en/starter/generator.html
-- https://code-boxx.com/simple-http-web-server-nodejs/
-- https://note.hommalab.io/posts/nodejs/nodejs-http-server/
-
 
 ## Directory-Structure
 ```
