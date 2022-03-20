@@ -54,30 +54,13 @@ Remark: On WSL2 with Ubuntu you may need to recreate WSL networking, see below i
 
 ## Build
 
-### Apache2 WebServer
-run  ```./build-apache2.sh```
-
-### Nginx WebServer (on Ubuntu)
-run  ```./build-nginx.sh```
+There is a build-script for every of the different web-hosting platforms.  
+Move on the the README-file of your chosen plattform.
 
 ## Run
 
-
-### Python+Flask WebApp inside Docker
-Attention: The docker image has to be built already.
-run ```./run-python.sh```
-
-Details:
-- Run ```docker run -t -d -p 8080:8080 --name raskeytarapp1 raskeytarapp-python``` to start the container
-- Open http://127.0.0.1:8080/ in your browser.
-- Run ```docker stop raskeytarapp1``` to shutdown container.
-
-### Apache2 hosted WebApp
-run ```./run-apache2.sh```
-
-### Nginx hosted WebApp
-run ```./run-nginx.sh```
-
+The run-scripts will run the prepared docker-container.  
+Move on the the README-file of your chosen plattform.
 
 ## Troubleshooting
 
