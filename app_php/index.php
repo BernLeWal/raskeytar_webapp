@@ -39,7 +39,7 @@
         <section id="banner" class="bg-img" data-bg="banner.png">
             <div class="inner">
                 <header>
-                    <p>Hello you from <?php echo $_SERVER['REMOTE_ADDR']; ?>  !</p>
+                    <p>Hello you from <?php echo $_SERVER['REMOTE_ADDR']; ?>!</p>
                     <h1>This is RasKeyTar</h1>
                 </header>
             </div>
