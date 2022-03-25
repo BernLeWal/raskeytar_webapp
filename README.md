@@ -6,6 +6,7 @@ with the help of different servers and frameworks, like
 - Apache2 (static content only), see [README-apache2.md](README-apache2.md)
 - Nginx (static content only), see [README-nginx.md](README-nginx.md)
 - NodeJS & Express-Library [README-nodejs.md](README-nodejs.md)
+- PHP [README-php.md](README-php.md)
 
 ## Prerequisites
 
